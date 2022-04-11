@@ -1,0 +1,7 @@
+.profile__button-edit {
+  width: 24px;
+  height: 24px;
+  background: #000;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
