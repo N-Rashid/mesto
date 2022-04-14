@@ -5,3 +5,7 @@
   border: 1px solid #fff;
   cursor: pointer;
 }
+
+.profile__button-edit:hover {
+  opacity: .6;
+}
