@@ -17,4 +17,4 @@
 
 Удачи!
 **Ссылка на проект**
-https://n-rashid.github.io/mesto/
+https://n-rashid.github.io/mesto/index.html
