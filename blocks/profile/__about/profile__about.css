@@ -1,0 +1,15 @@
+.profile__about {
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 426px) {
+  .profile__about {
+    max-width: 282px;
+    justify-content: center;
+    margin-top: 26px;
+    margin-bottom: 36px;
+  }
+}

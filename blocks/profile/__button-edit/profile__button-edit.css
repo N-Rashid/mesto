@@ -4,6 +4,9 @@
   background: #000;
   border: 1px solid #fff;
   cursor: pointer;
+  padding: 0;
+  margin-left: 18px;
+  transition: opacity .2s ease;
 }
 
 .profile__button-edit:hover {

@@ -1,3 +1,16 @@
 .copyright {
   padding-bottom: 60px;
 }
+
+@media(max-width: 665px) {
+  .copyright {
+    padding-left: 19px;
+  }
+}
+
+
+@media(max-width: 426px) {
+  .copyright {
+    padding-bottom: 36px;
+  }
+}

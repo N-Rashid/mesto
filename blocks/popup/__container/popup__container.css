@@ -7,3 +7,14 @@
   background: #fff;
   position: relative;
 }
+
+@media (max-width: 426px) {
+  .popup__container {
+    max-width: 282px;
+    max-height: 322px;
+    padding-top: 25px;
+    padding-right: 22px;
+    padding-bottom: 25px;
+    padding-left: 22px;
+  }
+}

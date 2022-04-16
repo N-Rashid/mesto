@@ -1,7 +1,13 @@
 .photo-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
   gap: 20px 17px;
   justify-items: center;
   padding: 51px 0 66px;
+}
+@media (max-width: 426px) {
+  .photo-cards  {
+    padding-top: 36px;
+    padding-bottom: 48px;
+  }
 }

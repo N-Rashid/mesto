@@ -4,7 +4,18 @@
   font-size: 42px;
   line-height: 1.14;
   margin: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+}
+
+@media (max-width: 665px) {
+  .profile__title {
+    font-size: 27px;
+    line-height: 33px;
+  }
+}
+
+
+@media (max-width: 426px) {
+  .profile__title {
+    line-height: 33px;
+  }
 }

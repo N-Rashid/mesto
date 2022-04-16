@@ -5,3 +5,16 @@
   padding-top: 45px;
   border-bottom: 1px solid rgb(54, 54, 54, .7);
 }
+
+@media (max-width: 665px) {
+  .header {
+    padding-left: 27px;
+  }
+}
+
+@media (max-width: 426px) {
+  .header {
+    padding-top: 28px;
+    height: 56px;
+  }
+}

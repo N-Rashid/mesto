@@ -13,8 +13,17 @@
   cursor: pointer;
   margin-top: 48px;
   padding: 0;
+  transition: opacity .2s ease;
 }
 
 .popup__btn:hover {
   opacity: .8;
+}
+
+@media (max-width: 426px) {
+  .popup__btn {
+    max-width: 238px;
+    height: 46px;
+    margin-top: 45px;
+  }
 }
