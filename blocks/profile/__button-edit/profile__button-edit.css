@@ -12,3 +12,10 @@
 .profile__button-edit:hover {
   opacity: .6;
 }
+
+@media (max-width: 426px) {
+  .profile__button-edit {
+    width: 18px;
+    height: 18px;
+  }
+}

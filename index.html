@@ -18,7 +18,6 @@
     </header>
 
     <main class="main">
-
       <section class="profile">
         <div class="profile__info">
           <img
@@ -29,79 +28,84 @@
           <div class="profile__about">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
             <button class="profile__button-edit">
-              <svg
-                width="10"
-                height="10"
-                viewbox="0 0 10 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M10 1.32827L2.60377 8.7666L1.28302 7.41936L8.66038 0L10 1.32827ZM0 10L1.96226 9.41177L0.584906 8.08349L0 10Z"
-                  fill="white"
-                />
-              </svg>
+              <img src="./image/profile-btn.svg" alt="редактировать">
             </button>
             <p class="profile__subtitle">Исследователь океана</p>
           </div>
         </div>
-        <button class="profile__button-add"><svg width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M22 9.77778H12.2222V0H9.77778V9.77778H0V12.2222H9.77778V22H12.2222V12.2222H22V9.77778Z" fill="white"/>
-          </svg>
-          </button>
+        <button class="profile__button-add">
+          <img src="/image/profile__btn-add.svg" alt="добавить">
+        </button>
       </section>
 
       <section class="photo-cards">
         <div class="card">
-          <img src="./image/kirill-pershin-1088404-unsplash.jpg" alt="крепость" class="card__image">
+          <img
+            src="./image/kirill-pershin-1088404-unsplash.jpg"
+            alt="крепость"
+            class="card__image"
+          />
           <div class="card__description">
             <h2 class="card__title">Карачаевск</h2>
-            <button class="card__like card__like_active" type="button">
-            </button>
+            <button class="card__like card__like_active" type="button"></button>
           </div>
         </div>
         <div class="card">
-          <img src="./image/kirill-pershin-1404681-unsplash-1.jpg" alt="Эльбрус" class="card__image">
+          <img
+            src="./image/kirill-pershin-1404681-unsplash-1.jpg"
+            alt="Эльбрус"
+            class="card__image"
+          />
           <div class="card__description">
             <h2 class="card__title">Гора Эльбрус</h2>
-            <button class="card__like card__like_active" type="button">
-            </button>
+            <button class="card__like card__like_active" type="button"></button>
           </div>
         </div>
         <div class="card">
-          <img src="./image/kirill-pershin-1556355-unsplash-1.jpg" alt="гора" class="card__image">
+          <img
+            src="./image/kirill-pershin-1556355-unsplash-1.jpg"
+            alt="гора"
+            class="card__image"
+          />
           <div class="card__description">
             <h2 class="card__title">Домбай</h2>
-            <button class="card__like card__like_active" type="button">
-            </button>
+            <button class="card__like card__like_active" type="button"></button>
           </div>
         </div>
         <div class="card">
-          <img src="./image/kirill-pershin-1404681-unsplash.jpg" alt="эльбрус" class="card__image">
+          <img
+            src="./image/kirill-pershin-1404681-unsplash.jpg"
+            alt="эльбрус"
+            class="card__image"
+          />
           <div class="card__description">
             <h2 class="card__title">Гора Эльбрус</h2>
-            <button class="card__like card__like_active" type="button">
-            </button>
+            <button class="card__like card__like_active" type="button"></button>
           </div>
         </div>
         <div class="card">
-          <img src="./image/kirill-pershin-1556355-unsplash-1.jpg" alt="гора" class="card__image">
+          <img
+            src="./image/kirill-pershin-1556355-unsplash-1.jpg"
+            alt="гора"
+            class="card__image"
+          />
           <div class="card__description">
             <h2 class="card__title">Домбай</h2>
-            <button class="card__like card__like_active" type="button">
-            </button>
+            <button class="card__like card__like_active" type="button"></button>
           </div>
         </div>
         <div class="card">
-          <img src="./image/kirill-pershin-1088404-unsplash.jpg" alt="крепость" class="card__image">
+          <img
+            src="./image/kirill-pershin-1088404-unsplash.jpg"
+            alt="крепость"
+            class="card__image"
+          />
           <div class="card__description">
             <h2 class="card__title">Карачаево-Ч...</h2>
-            <button class="card__like card__like_active" type="button">
-            </button>
+            <button class="card__like card__like_active" type="button"></button>
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="footer">
@@ -112,12 +116,24 @@
     <div class="popup">
       <div class="popup__container">
         <button class="popup__btn-close">
-          <img src="./image/close-con.svg" alt="закрыть" class="popup__close-image">
-       </button>
+          <img
+            src="./image/close-con.svg"
+            alt="закрыть"
+            class="popup__close-image"
+          />
+        </button>
         <form action="#" class="popup__form">
           <p class="popup__title">Редактировать профиль</p>
-          <input type="text" class="popup__input popup__input-name" value="Жак-Ив Кусто">
-          <input type="text" class="popup__input popup__input-about" value="Исследователь океана">
+          <input
+            type="text"
+            class="popup__input popup__input-name"
+            value="Жак-Ив Кусто"
+          />
+          <input
+            type="text"
+            class="popup__input popup__input-about"
+            value="Исследователь океана"
+          />
           <button type="submit" class="popup__btn">Сохранить</button>
         </form>
       </div>
