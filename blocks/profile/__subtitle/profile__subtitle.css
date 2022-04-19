@@ -3,6 +3,9 @@
   font-size: 18px;
   line-height: 22px;
   margin: 16px 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @media (max-width: 665px) {
@@ -14,7 +17,6 @@
 
 @media (max-width: 426px) {
   .profile__subtitle {
-    font-size: 14px;
     line-height: 17px;
   }
 }

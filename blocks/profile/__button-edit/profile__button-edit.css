@@ -7,6 +7,7 @@
   padding: 0;
   margin-left: 18px;
   transition: opacity .2s ease;
+  box-sizing: content-box;
 }
 
 .profile__button-edit:hover {

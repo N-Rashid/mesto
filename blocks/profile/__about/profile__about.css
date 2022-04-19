@@ -5,11 +5,16 @@
   align-items: center;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 510px) {
   .profile__about {
-    max-width: 282px;
     justify-content: center;
     margin-top: 26px;
     margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 426px) {
+  .profile__about {
+    max-width: 282px;
   }
 }
