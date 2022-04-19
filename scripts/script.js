@@ -4,14 +4,8 @@ const popupClose = popup.querySelector('.popup__btn-close');
 let formElement = popup.querySelector('.popup__form');
 let nameInput = formElement.querySelector('.popup__input-name');
 let aboutInput = formElement.querySelector('.popup__input-about');
-const popupBtn = document.querySelector('.popup__btn');
 let profileTitle = document.querySelector('.profile__title');
 let profileSubtitle = document.querySelector('.profile__subtitle');
-
-
-popupClose.addEventListener('click', closePopup);
-profileEdit.addEventListener('click', popupToggle);
-formElement.addEventListener('submit', formSubmitHandler);
 
 
 function popupToggle() {
@@ -33,3 +27,8 @@ function formSubmitHandler (evt) {
 
   closePopup ();
 }
+
+popupClose.addEventListener('click', closePopup);
+profileEdit.addEventListener('click', popupToggle);
+formElement.addEventListener('submit', formSubmitHandler);
+

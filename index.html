@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
-    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./pages/index.css">
     <title>Mesto</title>
   </head>
   <body class="root">
@@ -27,14 +26,14 @@
           />
           <div class="profile__about">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
-            <button class="profile__button-edit">
+            <button class="profile__button-edit" type="button">
               <img src="./image/profile-btn.svg" alt="редактировать">
             </button>
             <p class="profile__subtitle">Исследователь океана</p>
           </div>
         </div>
         <button class="profile__button-add">
-          <img src="/image/profile__btn-add.svg" alt="добавить">
+          <img src="./image/profile__btn-add.svg" alt="добавить">
         </button>
       </section>
 
@@ -109,20 +108,18 @@
     </main>
 
     <footer class="footer">
-      <div class="copyright">
-        <p class="copyright__info">© 2020 Mesto Russia</p>
-      </div>
+        <p class="footer__copyright">© 2020 Mesto Russia</p>
     </footer>
     <div class="popup">
       <div class="popup__container">
-        <button class="popup__btn-close">
+        <button class="popup__btn-close" type="button">
           <img
             src="./image/close-con.svg"
             alt="закрыть"
             class="popup__close-image"
           />
         </button>
-        <form action="#" class="popup__form">
+        <form action="#" class="popup__form" name="popup">
           <p class="popup__title">Редактировать профиль</p>
           <input
             type="text"
