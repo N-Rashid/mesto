@@ -144,7 +144,7 @@ imageBtn.forEach(function (pop) {
 
   pop.addEventListener('click', function (evt) {
 
-    const img1 = popupImage.querySelector('.popup-image__image');
+    const img1 = popupImage.querySelector('.popup-image__card-image');
     img1.src = evt.target.src;
     popupImage.classList.add('popup-image_opened');
   });
