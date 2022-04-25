@@ -32,77 +32,13 @@
             <p class="profile__subtitle">Исследователь океана</p>
           </div>
         </div>
-        <button class="profile__button-add">
+        <button class="profile__button-add" type="button">
           <img src="./image/profile__btn-add.svg" alt="добавить">
         </button>
       </section>
 
       <section class="photo-cards">
-        <div class="card">
-          <img
-            src="./image/kirill-pershin-1088404-unsplash.jpg"
-            alt="крепость"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Карачаевск</h2>
-            <button class="card__like card__like_active" type="button"></button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./image/kirill-pershin-1404681-unsplash-1.jpg"
-            alt="Эльбрус"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Гора Эльбрус</h2>
-            <button class="card__like card__like_active" type="button"></button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./image/kirill-pershin-1556355-unsplash-1.jpg"
-            alt="гора"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Домбай</h2>
-            <button class="card__like card__like_active" type="button"></button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./image/kirill-pershin-1404681-unsplash.jpg"
-            alt="эльбрус"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Гора Эльбрус</h2>
-            <button class="card__like card__like_active" type="button"></button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./image/kirill-pershin-1556355-unsplash-1.jpg"
-            alt="гора"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Домбай</h2>
-            <button class="card__like card__like_active" type="button"></button>
-          </div>
-        </div>
-        <div class="card">
-          <img
-            src="./image/kirill-pershin-1088404-unsplash.jpg"
-            alt="крепость"
-            class="card__image"
-          />
-          <div class="card__description">
-            <h2 class="card__title">Карачаево-Ч...</h2>
-            <button class="card__like card__like_active" type="button"></button>
-          </div>
+
         </div>
       </section>
     </main>
@@ -110,6 +46,7 @@
     <footer class="footer">
         <p class="footer__copyright">© 2020 Mesto Russia</p>
     </footer>
+
     <div class="popup">
       <div class="popup__container">
         <button class="popup__btn-close" type="button">
@@ -135,6 +72,62 @@
         </form>
       </div>
     </div>
+
+    <div class="popup popup_add">
+      <div class="popup__container">
+        <button class="popup__btn-close popup__btn-close_add" type="button">
+          <img
+            src="./image/close-con.svg"
+            alt="закрыть"
+            class="popup__close-image"
+          />
+        </button>
+        <form action="#" class="popup__form popup__form_add" name="popup-edit">
+          <p class="popup__title">Новое Место</p>
+          <input
+            type="text"
+            class="popup__input popup__input-add-name"
+            placeholder="Название"
+          />
+          <input
+            type="text"
+            class="popup__input popup__input-link"
+            placeholder="Ссылка на картинку"
+          />
+          <button type="submit" class="popup__btn">Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup-image">
+      <div class="popup-image__container">
+        <button class="popup__close" type="button">
+          <img
+          src="./image/close-con.svg"
+          alt="закрыть"
+          class="popup-image__image-close"
+        />
+        </button>
+        <img class="popup-image__card-image">
+      </div>
+    </div>
+
+    <template class="template-card">
+      <div class="card">
+        <button class="card__delete" type="button">
+          <img src="./image/Trash.svg" alt="удалить">
+        </button>
+        <img
+        src="#"
+          class="card__image"
+        />
+        <div class="card__description">
+          <h2 class="card__title"></h2>
+          <button class="card__like" type="button"></button>
+        </div>
+      </div>
+    </template>
+
     <script src="./scripts/script.js"></script>
   </body>
 </html>
