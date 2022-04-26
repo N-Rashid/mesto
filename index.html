@@ -38,8 +38,6 @@
       </section>
 
       <section class="photo-cards">
-
-        </div>
       </section>
     </main>
 
@@ -49,66 +47,73 @@
 
     <div class="popup">
       <div class="popup__container">
-        <button class="popup__btn-close" type="button">
-          <img
-            src="./image/close-con.svg"
-            alt="закрыть"
-            class="popup__close-image"
-          />
-        </button>
-        <form action="#" class="popup__form" name="popup">
-          <p class="popup__title">Редактировать профиль</p>
-          <input
-            type="text"
-            class="popup__input popup__input-name"
-            value="Жак-Ив Кусто"
-          />
-          <input
-            type="text"
-            class="popup__input popup__input-about"
-            value="Исследователь океана"
-          />
-          <button type="submit" class="popup__btn">Сохранить</button>
-        </form>
+        <div class="popup__content">
+          <button class="popup__btn-close" type="button">
+            <img
+              src="./image/close-con.svg"
+              alt="закрыть"
+              class="popup__close-image"
+            />
+          </button>
+          <form action="#" class="popup__form" name="popup">
+            <p class="popup__title">Редактировать профиль</p>
+            <input
+              type="text"
+              class="popup__input popup__input-name"
+              value="Жак-Ив Кусто"
+            />
+            <input
+              type="text"
+              class="popup__input popup__input-about"
+              value="Исследователь океана"
+            />
+            <button type="submit" class="popup__btn">Сохранить</button>
+          </form>
+        </div>
       </div>
     </div>
 
     <div class="popup popup_add">
       <div class="popup__container">
-        <button class="popup__btn-close popup__btn-close_add" type="button">
-          <img
-            src="./image/close-con.svg"
-            alt="закрыть"
-            class="popup__close-image"
-          />
-        </button>
-        <form action="#" class="popup__form popup__form_add" name="popup-edit">
-          <p class="popup__title">Новое Место</p>
-          <input
-            type="text"
-            class="popup__input popup__input-add-name"
-            placeholder="Название"
-          />
-          <input
-            type="text"
-            class="popup__input popup__input-link"
-            placeholder="Ссылка на картинку"
-          />
-          <button type="submit" class="popup__btn">Сохранить</button>
-        </form>
+        <div class="popup__content">
+          <button class="popup__btn-close popup__btn-close_add" type="button">
+            <img
+              src="./image/close-con.svg"
+              alt="закрыть"
+              class="popup__close-image"
+            />
+          </button>
+          <form action="#" class="popup__form popup__form_add" name="popup-edit">
+            <p class="popup__title">Новое Место</p>
+            <input
+              type="text"
+              class="popup__input popup__input-add-name"
+              placeholder="Название"
+            />
+            <input
+              type="text"
+              class="popup__input popup__input-link"
+              placeholder="Ссылка на картинку"
+            />
+            <button type="submit" class="popup__btn">Сохранить</button>
+          </form>
+        </div>
       </div>
     </div>
 
     <div class="popup-image">
       <div class="popup-image__container">
-        <button class="popup__close" type="button">
-          <img
-          src="./image/close-con.svg"
-          alt="закрыть"
-          class="popup-image__image-close"
-        />
-        </button>
-        <img class="popup-image__card-image">
+        <div class="popup_image__content">
+          <button class="popup__close" type="button">
+            <img
+            src="./image/close-con.svg"
+            alt="закрыть"
+            class="popup-image__image-close"
+          />
+          </button>
+          <img src="#" class="popup-image__card-image" alt="Картинка">
+          <h3 class="popup-image__title"></h3>
+        </div>
       </div>
     </div>
 

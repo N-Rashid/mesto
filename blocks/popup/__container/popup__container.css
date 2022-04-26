@@ -1,28 +1,9 @@
 .popup__container {
-  width: 430px;
-  height: 330px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  padding: 34px 36px 37px;
-  background: #fff;
+  min-height: 100%;
   position: relative;
-  /* visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .popup__container:hover {
-  visibility:visible;
-  opacity: 1;
-} */
 
-@media (max-width: 426px) {
-  .popup__container {
-    max-width: 282px;
-    max-height: 322px;
-    padding-top: 25px;
-    padding-right: 22px;
-    padding-bottom: 25px;
-    padding-left: 22px;
-  }
-}
