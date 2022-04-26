@@ -45,7 +45,7 @@ const cardTemplate = document
 const photoCards = document.querySelector(".photo-cards");
 const profileAdd = document.querySelector(".profile__button-add");
 
-const popupImageClose = document.querySelector(".popup__close");
+const popupImageClose = document.querySelector(".popup-image__close");
 const popupImage = document.querySelector(".popup-image");
 
 profileAdd.addEventListener("click", popupToggleAdd);
