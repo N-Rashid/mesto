@@ -37,16 +37,20 @@ const profileSubtitle = document.querySelector(".profile__subtitle");
 // Popup
 function openPopup(popup) {
   popup.classList.add("popup_opened");
+  document.addEventListener("keyup", keyHandler);
+  document.addEventListener("click", overlayClose);
 };
 
 function closePopup(popup) {
   popup.classList.remove("popup_opened");
+  document.removeEventListener("keyup", keyHandler);
+  document.removeEventListener("mousedown", overlayClose);
 };
 
-function popupProfileClose () {
+function popupProfileOpen() {
   nameInput.value = profileTitle.textContent;
   aboutInput.value = profileSubtitle.textContent;
-  closePopup(popupProfile);
+  openPopup(popupProfile);
 };
 
 function submitProfileForm(evt) {
@@ -55,11 +59,39 @@ function submitProfileForm(evt) {
   profileTitle.textContent = nameInput.value;
   profileSubtitle.textContent = aboutInput.value;
 
-  popupProfileClose(popupProfile);
+  closePopup(popupProfile);
 };
 
-popupProfileCloseButton.addEventListener("click", popupProfileClose);
-profileEdit.addEventListener("click", () => openPopup(popupProfile));
+function overlayClose(evt) {
+  const popups = Array.from(document.querySelectorAll(".popup"));
+  popups.forEach((element) => {
+    if (
+      evt.target.classList.contains("popup__container") ||
+      evt.target.classList.contains("popup-image__container")
+    ) {
+      closePopup(element);
+    }
+  });
+};
+
+function keyHandler(evt) {
+  const popupOpen = document.querySelector(".popup_opened");
+  if (evt.key === "Escape" && popupOpen.classList.contains("popup_add")) {
+    closePopup(popupAdd);
+  } else if (
+    evt.key === "Escape" &&
+    popupOpen.classList.contains("popup_profile")
+  ) {
+    closePopup(popupProfile);
+  } else if (evt.key === "Escape") {
+    closePopup(popupImage);
+  }
+};
+
+popupProfileCloseButton.addEventListener("click", () =>
+  closePopup(popupProfile)
+);
+profileEdit.addEventListener("click", popupProfileOpen);
 popupProfileForm.addEventListener("submit", submitProfileForm);
 
 // Карточки
@@ -77,19 +109,18 @@ const profileAdd = document.querySelector(".profile__button-add");
 const popupImageClose = document.querySelector(".popup-image__close");
 const popupImage = document.querySelector(".popup-image");
 
-profileAdd.addEventListener("click", () => openPopup(popupAdd));
-popupCloseAdd.addEventListener("click", closeAdd);
+profileAdd.addEventListener("click", openAdd);
+popupCloseAdd.addEventListener("click", () => closePopup(popupAdd));
 popupFormAdd.addEventListener("submit", cardAdd);
-popupImageClose.addEventListener('click', () => closePopup(popupImage));
+popupImageClose.addEventListener("click", () => closePopup(popupImage));
 
-
-function closeAdd () {
+function openAdd() {
   inputNameAdd.value = "";
   inputLink.value = "";
-  closePopup(popupAdd);
+  openPopup(popupAdd);
 };
 
-function deleteCard (event) {
+function deleteCard(event) {
   event.target.closest(".card").remove();
 };
 
@@ -105,7 +136,6 @@ const generateCard = function (item) {
   cardTitle.textContent = item.name;
   cardImage.src = item.link;
   cardImage.alt = item.name;
-
 
   const popupCardImage = popupImage.querySelector(".popup-image__card-image");
   const popupImageTitle = document.querySelector(".popup-image__title");
@@ -135,6 +165,5 @@ function cardAdd(event) {
   event.preventDefault();
 
   renderCards({ name: inputNameAdd.value, link: inputLink.value });
-  closeAdd();
+  closePopup(popupAdd);
 };
-

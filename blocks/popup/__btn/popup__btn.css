@@ -11,7 +11,7 @@
   border-radius: 2px;
   font-family: 'Inter', Arial, sans-serif;
   cursor: pointer;
-  margin-top: 48px;
+  margin-top: 31.5px;
   padding: 0;
   transition: opacity .2s ease;
 }
@@ -24,6 +24,6 @@
   .popup__btn {
     max-width: 238px;
     height: 46px;
-    margin-top: 45px;
+    margin-top: 31.5px;
   }
 }
