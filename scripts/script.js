@@ -88,7 +88,6 @@ function popupResetError (selector) {
   const popupReset = document.querySelectorAll('.' + selector);
   popupReset.forEach ((element) => {
     element.textContent = '';
-    // element.style.borderBottomColor = 'rgba(0, 0, 0, .2)';
     element.classList.remove(selector);
   });
 };
