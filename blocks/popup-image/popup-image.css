@@ -1,1 +1,6 @@
-
+.popup-image {
+  background: rgba(0, 0, 0, .9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -8,6 +8,10 @@
   background: rgba(0, 0, 0, .5);
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

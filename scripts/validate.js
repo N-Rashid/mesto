@@ -1,10 +1,12 @@
-enableValidation({
+const options = {
   formSelector: '.popup__form',
   inputSelector: '.popup__input',
   submitButtonSelector: '.popup__btn',
   inactiveButtonClass: 'popup__btn_disabled',
   inputErrorClass: 'popup__input_type_error',
-});
+};
+
+enableValidation(options);
 
 function showInputError (formElement, inputElement, errorMessage, object) {
   const error = formElement.querySelector(`.${inputElement.id}-error`);
@@ -26,6 +28,16 @@ function checkInputValidity (formElement, inputElement, object) {
   } else {
     hideInputError(formElement, inputElement, object);
 };
+};
+
+function disabledButton (buttonElement, object) {
+  buttonElement.classList.add(object.inactiveButtonClass);
+  buttonElement.setAttribute('disabled', true);
+};
+
+function enableButton (buttonElement, object) {
+  buttonElement.classList.remove(object.inactiveButtonClass);
+  buttonElement.removeAttribute('disabled');
 };
 
 function setEventListeners (formElement, object) {
@@ -56,13 +68,13 @@ function hasInvalidInput (inputList) {
   });
 };
 
-
 function toggleButtonState (inputList, buttonElement, object) {
   if (hasInvalidInput(inputList)) {
-    buttonElement.classList.add(object.inactiveButtonClass);
-    buttonElement.setAttribute('disabled', true);
+    disabledButton(buttonElement, object);
   } else {
-    buttonElement.classList.remove(object.inactiveButtonClass);
-    buttonElement.removeAttribute('disabled');
+    enableButton (buttonElement, object);
   };
 };
+
+
+
