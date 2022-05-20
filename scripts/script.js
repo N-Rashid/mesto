@@ -48,13 +48,13 @@ function closePopup(popup) {
   popup.classList.remove("popup_opened");
   document.removeEventListener("keyup", keyHandler);
   popup.removeEventListener("mousedown", overlayClose);
-  popupResetError('popup__input_type_error');
 };
 
 function popupProfileOpen() {
   nameInput.value = profileTitle.textContent;
   aboutInput.value = profileSubtitle.textContent;
   enableButton(popupBtnProfile, options);
+  popupResetError('popup__input_type_error');
   openPopup(popupProfile);
 };
 
@@ -68,8 +68,7 @@ function submitProfileForm(evt) {
 
 function overlayClose (evt) {
   if (evt.target === evt.currentTarget) {
-    const popupOpen = document.querySelector(".popup_opened");
-    closePopup(popupOpen);
+    closePopup(evt.target);
   };
 };
 
@@ -122,6 +121,7 @@ popupImageClose.addEventListener("click", () => closePopup(popupImage));
 function openAdd() {
   popupFormAdd.reset();
   disabledButton(popupAddButton, options);
+  popupResetError('popup__input_type_error');
   openPopup(popupAdd);
 };
 
